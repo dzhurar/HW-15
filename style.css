@@ -1,0 +1,43 @@
+.holder{
+    border: 5px solid black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item{
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 300px;
+    flex: 1 1 calc(33.33%);
+  }
+  .item:nth-child(1){
+    background-color: tomato;
+    border-top-left-radius: 15px;
+    order: -2;
+    flex-grow: 2;
+    flex-basis: calc(50%);
+  }
+  .item:nth-child(2){
+    background-color: aquamarine;
+    order: 1;
+  }
+  .item:nth-child(3){
+    background-color: purple;
+    order: 0;
+  }
+  .item:nth-child(4){
+    background-color: green;
+    order: 2;
+  }
+  .item:nth-child(5){
+    background-color: goldenrod;
+    border-top-right-radius: 15px;
+    order: -1;
+    flex-grow: 2;
+    flex-basis: calc(50%);
+  }
